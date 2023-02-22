@@ -19,6 +19,8 @@
 
 <script>
 import Pop from '../utils/Pop.js';
+import { housesService } from '../services/HousesService.js'
+import { onMounted } from 'vue';
 
 export default {
   setup(){
@@ -29,6 +31,11 @@ export default {
         Pop.error(error)
       }
     }
+
+    onMounted(() => {
+      getHouses()
+    })
+
     return {}
   }
 }
