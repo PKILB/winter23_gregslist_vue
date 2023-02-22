@@ -7,5 +7,6 @@ export class House {
         this.year = data.year
         this.price = data.price
         this.description = data.description
+        this.id = data.id || null
     }
 }
