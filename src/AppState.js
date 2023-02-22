@@ -5,7 +5,10 @@ export const AppState = reactive({
   user: {},
   /** @type {import('./models/Account.js').Account} */
   account: {},
-
+  
   cars: [],
-  car: null
+  car: null,
+  
+  /** @type {import('./models/House.js').House[]} */
+  houses: []
 })
